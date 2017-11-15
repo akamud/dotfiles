@@ -1,0 +1,42 @@
+[core]
+	excludesfile = /Users/Mahmoud/.gitignore_global
+	editor = code --wait
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = Mahmoud Ali
+	email = muddibr@gmail.com
+[color]
+    diff = always
+    interactive = always
+    status = always
+    branch = always
+[alias]
+    st = status
+    ci = commit
+    cm = !git add -A && git commit -m
+    co = checkout
+    ce = config --global -e
+    br = branch
+    fixup = commit --all --amend --no-edit
+    un = !GIT_CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD) && git log origin/$GIT_CURRENT_BRANCH..
+    pend = !GIT_CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD) && git log ..origin/$GIT_CURRENT_BRANCH
+    save = !git add -A && git commit -m 'SAVEPOINT'
+    wip = !git add -u && git commit -m "WIP"
+    wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
+    bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
+    amend = commit -a --amend
+    bl = show-branch --list
+    fap = fetch --all --prune
+    bgone = !git branch -vv | grep ': gone]' | awk '{print $1}'
+[push]
+    default = simple
+[log]
+    decorate = full
+    abbrevCommit = true
+[format]
+    pretty=format:%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset
