@@ -2,7 +2,7 @@
 
 After 1 month using a brand new Macbook Pro, it started failing on me, so I had to take it to the Apple Store to then realize I'd have to reinstall everything. Again.
 
-I decided this would be the last time I wasted so much time doing all the setup. So I remebered [Victor Cavalcante](https://github.com/vcavalcante/dotfiles)'s advice to me. He was talking about how he automated his setup using something called "dotfiles".
+I decided this would be the last time I wasted so much time doing all the setup. So I remebered [Victor Cavalcante](https://github.com/vcavalcante/dotfiles)'s advice to me. He was talking about how he automated his setup using something called "dotfiles". Read about it [here](https://driesvints.com/blog/getting-started-with-dotfiles/).
 
 After a lot of researching and investigating, I decided to use [Dotbot](https://github.com/anishathalye/dotbot) to do the same.
 
@@ -41,6 +41,10 @@ cd ~/.dotfiles && ./install
 * [kazmasaurus](https://github.com/kazmasaurus/Dotfiles)
 * [holman](https://github.com/holman/dotfiles)
 * [mathiasbynens](https://github.com/mathiasbynens/dotfiles)
+
+## Useful blog posts
+* [Getting started with dotfiles](https://driesvints.com/blog/getting-started-with-dotfiles/)
+* [Managing Your Dotfiles](http://www.anishathalye.com/2014/08/03/managing-your-dotfiles/)
 
 ## License
 
