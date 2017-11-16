@@ -9,10 +9,27 @@ After a lot of researching and investigating, I decided to use [Dotbot](https://
 ## Why Dotbot?
 
 I wanted a simple bootstrapper with no dependencies that did only 2 things:
-- Automated the creation of symlinks with some security for overriding
+- Automated the creation of symlinks with some security for overwriting
 - Provided a way to execute commands for things like sourcing scripts, running brew, etc.
 
 I didn't want something much more complex than that, I almost decided I'd write my own script, but then I found out about Dotbot, which completely satisfied my requirements.
+
+### Setting up your Mac
+
+Follow these install instructions to setup a new Mac.
+
+1. Update macOS to the latest version with the App Store
+2. Install Xcode from the App Store, open it and accept the license agreement
+3. Install macOS Command Line Tools by running 
+```
+xcode-select --install
+```
+4. Clone this repo to `~/.dotfiles`
+5. Start the installation
+```
+cd ~/.dotfiles && ./install
+``` 
+6. Restart your computer to finalize the process
 
 ## Tools used
 * [Dotbot](https://github.com/anishathalye/dotbot)

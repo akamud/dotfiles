@@ -2,5 +2,48 @@
 
 - link:
     ~/.gitconfig: gitconfig
-    ~/.zshrc: zshrc
+    ~/.zshrc: 
+        force: true
+        path: 'zshrc'
 
+- shell:
+    -
+        command: 'sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"'
+        stdin: true
+        stdout: true
+        stderr: true
+        description: Install oh-my-zsh
+    -
+        command: "rm -f ~/.zshrc && ln -s ~/.dotfiles/zshrc ~/.zshrc"
+        stdin: true
+        stdout: true
+        stderr: true
+        description: Overwrite oh-my-zsh default .zshrc template
+    -
+        command: brew --version || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+        stdin: true
+        stdout: true
+        stderr: true
+        description: Install Homebew
+    -
+        command: brew update
+        description: Update Homebrew
+        stdin: true
+        stdout: true
+        stderr: true
+    # Install Bundle to be able to use Brewfile
+    -
+        command: brew tap homebrew/bundle
+        stdin: true
+        stdout: true
+        stderr: true
+        description: Install Bundle formula
+    -
+        command: brew bundle
+        description: Install Brew formulas and casks
+        stdin: true
+        stdout: true
+        stderr: true
+    -
+        command: "source .macos"
+        description: Set macOS preferences
