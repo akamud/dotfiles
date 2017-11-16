@@ -24,7 +24,10 @@ Follow these install instructions to setup a new Mac.
 ```
 xcode-select --install
 ```
-4. Clone this repo to `~/.dotfiles`
+4. Clone this repo
+```
+git clone https://github.com/akamud/dotfiles.git ~/.dotfiles
+```
 5. Start the installation
 ```
 cd ~/.dotfiles && ./install
@@ -42,9 +45,11 @@ cd ~/.dotfiles && ./install
 * [holman](https://github.com/holman/dotfiles)
 * [mathiasbynens](https://github.com/mathiasbynens/dotfiles)
 
-## Useful blog posts
+## Useful resources
 * [Getting started with dotfiles](https://driesvints.com/blog/getting-started-with-dotfiles/)
 * [Managing Your Dotfiles](http://www.anishathalye.com/2014/08/03/managing-your-dotfiles/)
+* [More info about `.macos` defaults](http://osxnotes.net/defaults.html)
+* [macOS-Defaults project](https://github.com/kevinSuttle/macOS-Defaults)
 
 ## License
 
