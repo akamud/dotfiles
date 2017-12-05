@@ -35,10 +35,13 @@ cask 'vlc'
 cask 'vnc-viewer'
 
 # Quicklook
+cask 'provisionql'
 cask 'qlcolorcode'
+cask 'qlimagesize'
 cask 'qlmarkdown'
-cask 'quicklook-json'
 cask 'qlstephen'
+cask 'quicklookapk'
+cask 'quicklook-json'
 
 # Install Mac App Store apps
 mas 'Battery Health', id: 490192174
