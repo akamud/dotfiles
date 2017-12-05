@@ -23,6 +23,7 @@ cask 'caffeine'
 cask 'dropbox'
 cask 'google-chrome'
 cask 'kdiff3'
+cask 'p4merge'
 cask 'slack'
 cask 'spectacle'
 cask 'spotify'
@@ -46,5 +47,6 @@ mas 'Microsoft OneNote', id: 784801555
 mas 'OneDrive', id: 823766827
 mas 'Sip', id: 507257563
 mas 'Snap', id: 418073146
+mas 'Skitch', id: 425955336
 mas 'Trello', id: 1278508951
 mas 'TweetDeck', id: 485812721
