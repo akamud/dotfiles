@@ -3,7 +3,6 @@ tap 'caskroom/cask'
 tap 'homebrew/bundle'
 
 # Install ZSH
-brew 'zsh'
 brew 'zsh-syntax-highlighting'
 
 # Install Binaries
