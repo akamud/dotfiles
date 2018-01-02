@@ -1,2 +1,2 @@
-# Path variables
-#export PATH="$DOTFILES/bin:$PATH"
+# Android tools
+export PATH="$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:$PATH"
