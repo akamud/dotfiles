@@ -61,6 +61,8 @@ plugins=(git git-prompt z zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
