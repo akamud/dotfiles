@@ -10,7 +10,7 @@ brew 'mas'
 brew 'node'
 
 # Development
-cask 'dotnet'
+cask 'dotnet-sdk'
 cask 'imageoptim'
 cask 'sourcetree'
 cask 'sublime-text'
