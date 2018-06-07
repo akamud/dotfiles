@@ -30,6 +30,7 @@ cask 'spotmenu'
 cask 'transmission'
 cask 'transmit'
 cask 'the-unarchiver'
+cask 'thyme'
 cask 'vlc'
 cask 'vnc-viewer'
 
