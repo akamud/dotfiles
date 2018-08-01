@@ -46,6 +46,7 @@ cask 'provisioning'
 
 # Install Mac App Store apps
 mas 'Battery Health', id: 490192174
+mas 'DevCleaner', id: 1388020431
 mas 'GIPHY CAPTURE', id: 668208984
 mas 'Microsoft OneNote', id: 784801555
 mas 'OneDrive', id: 823766827
