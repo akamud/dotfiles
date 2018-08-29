@@ -19,6 +19,7 @@
     st = status
     ci = commit
     cm = !git add -A && git commit -m
+    cmm = "!g() { git add -A && git commit -m \"$*\"; }; g"
     co = checkout
     ce = config --global -e
     br = branch
@@ -27,12 +28,22 @@
     pend = !GIT_CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD) && git log ..origin/$GIT_CURRENT_BRANCH
     save = !git add -A && git commit -m 'SAVEPOINT'
     wip = !git add -u && git commit -m "WIP"
+    undo = reset --soft HEAD~1
     wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
     bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
     amend = commit -a --amend
     bl = show-branch --list
     fap = fetch --all --prune
     bgone = !git branch -vv | grep ': gone]' | awk '{print $1}'
+    lg = !"git lg1"
+    lg1 = !"git lg1-specific --all"
+    lg2 = !"git lg2-specific --all"
+    lg3 = !"git lg3-specific --all"
+    lg1-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
+    lg2-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
+    lg3-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset) %C(bold cyan)(committed: %cD)%C(reset) %C(auto)%d%C(reset)%n''          %C(white)%s%C(reset)%n''          %C(dim white)- %an <%ae> %C(reset) %C(dim white)(committer: %cn <%ce>)%C(reset)'
+    filesIn = diff-tree --no-commit-id --name-only -r 
+    breset = "!git checkout master && git branch | grep -v -e master | xargs -n1 git branch -D"
 [push]
     default = simple
 [log]
