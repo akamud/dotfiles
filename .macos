@@ -37,6 +37,15 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 defaults write com.apple.Terminal ShowLineMarks -int 0
 
 ###############################################################################
+# iTerm2                                                                    #
+###############################################################################
+
+# Specify the preferences directory
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$DOTFILES"
+# Tell iTerm2 to use the custom preferences in the directory
+defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+
+###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
 
