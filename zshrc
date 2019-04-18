@@ -8,7 +8,7 @@ export DOTFILES=$HOME/.dotfiles
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME=""
+ZSH_THEME="spaceship"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -89,5 +89,4 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # export PATH=/Users/Mahmoud/.node/bin:/Users/Mahmoud/.dnx/runtimes/dnx-coreclr-darwin-x64.1.0.0-rc1-final/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet/
 
-PROMPT='${ret_status} %{$fg[cyan]%}%c%{$reset_color%} $(git_super_status)'
-RPROMPT=''
+SPACESHIP_GIT_STATUS_STASHED=

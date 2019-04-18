@@ -17,6 +17,7 @@
     branch = always
 [alias]
     st = status
+    sc = !git diff --stat | tail -n1
     ci = commit
     cm = !git add -A && git commit -m
     cmm = "!g() { git add -A && git commit -m \"$*\"; }; g"
