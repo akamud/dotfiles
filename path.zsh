@@ -9,3 +9,6 @@ export PATH="$JAVA_HOME/bin:$PATH"
 
 # Flutter
 export PATH="$PATH:$HOME/Library/Developer/flutter/bin"
+
+# Dotnet Tools
+export PATH="$HOME/.dotnet/tools:$PATH"
