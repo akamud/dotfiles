@@ -35,6 +35,7 @@ cask 'the-unarchiver'
 cask 'thyme'
 cask 'vlc'
 cask 'vnc-viewer'
+cask 'zeplin'
 
 # Quicklook
 cask 'provisionql'
