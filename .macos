@@ -46,6 +46,13 @@ defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$DOTFILES"
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
 ###############################################################################
+# Dock                                                                    #
+###############################################################################
+
+# Disable Dashboard
+defaults write com.apple.dashboard mcx-disabled -boolean YES
+
+###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
 
