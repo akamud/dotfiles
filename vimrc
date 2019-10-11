@@ -13,9 +13,6 @@ nnoremap <C-CR> O<ESC>
 vnoremap <Leader>c "hy:%s/<C-r>h//g<left><left>
 vnoremap <Leader>s "hy:/<C-r>h<CR>
 
-" paste maps
-xnoremap <silent> <Leader>p p:let @"=@0<CR>
-
 " surround maps
 nnoremap ys( ciw(<C-r>")<Esc>
 nnoremap ys[ ciw[<C-r>"]<Esc>
