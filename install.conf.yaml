@@ -2,6 +2,8 @@
 
 - link:
     ~/.gitconfig: gitconfig
+    ~/.vimrc: vimrc
+    ~/.ideavimrc: vimrc
     ~/.zshrc: 
         force: true
         path: 'zshrc'
