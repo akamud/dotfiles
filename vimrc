@@ -1,4 +1,4 @@
-set clipboard=unnamed
+set clipboard+=unnamedplus
 
 imap jj <ESC>
 
@@ -12,6 +12,12 @@ nnoremap <C-CR> O<ESC>
 
 vnoremap <Leader>c "hy:%s/<C-r>h//g<left><left>
 vnoremap <Leader>s "hy:/<C-r>h<CR>
+
+" paste maps
+nnoremap <Leader>p "+p
+nnoremap <Leader>P "+P
+vnoremap <Leader>p "+p
+vnoremap <Leader>P "+P
 
 " surround maps
 nnoremap ys( ciw(<C-r>")<Esc>
