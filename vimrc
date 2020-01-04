@@ -1,4 +1,7 @@
 set clipboard+=unnamedplus
+" IdeaVim plugins
+set surround
+set commentary
 
 imap jj <ESC>
 
@@ -20,29 +23,29 @@ vnoremap <Leader>p "+p
 vnoremap <Leader>P "+P
 
 " surround maps
-nnoremap ys( ciw(<C-r>")<Esc>
-nnoremap ys[ ciw[<C-r>"]<Esc>
-nnoremap ys" ciw"<C-r>""<Esc>
-nnoremap ys' ciw'<C-r>"'<Esc>
-nnoremap ysw( ciW(<C-r>")<Esc>
-nnoremap ysw[ ciW[<C-r>"]<Esc>
-nnoremap ysw" ciW"<C-r>""<Esc>
-nnoremap ysw' ciW'<C-r>"'<Esc>
+" nnoremap ys( ciw(<C-r>")<Esc>
+" nnoremap ys[ ciw[<C-r>"]<Esc>
+" nnoremap ys" ciw"<C-r>""<Esc>
+" nnoremap ys' ciw'<C-r>"'<Esc>
+" nnoremap ysw( ciW(<C-r>")<Esc>
+" nnoremap ysw[ ciW[<C-r>"]<Esc>
+" nnoremap ysw" ciW"<C-r>""<Esc>
+" nnoremap ysw' ciW'<C-r>"'<Esc>
 
 " surround visual selected text
-vnoremap S" c"<C-r>""<Esc>
-vnoremap S{ c{<C-r>"}<Esc>
-vnoremap S' c"<C-r>"'<Esc>
-vnoremap S( c(<C-r>")<Esc>
-vnoremap S* c/*<C-r>"*/<Esc>
-vnoremap S{ c{<C-r>"}<Esc>
+" vnoremap S" c"<C-r>""<Esc>
+" vnoremap S{ c{<C-r>"}<Esc>
+" vnoremap S' c"<C-r>"'<Esc>
+" vnoremap S( c(<C-r>")<Esc>
+" vnoremap S* c/*<C-r>"*/<Esc>
+" vnoremap S{ c{<C-r>"}<Esc>
 
-nnoremap ds( vi(oh<Esc>msvi(l<Esc>x`sx
-nnoremap ds[ vi[oh<Esc>msvi[l<Esc>x`sx
-nnoremap ds{ vi{oh<Esc>msvi{l<Esc>x`sx
-nnoremap ds< vi<oh<Esc>msvi<l<Esc>x`sx
-nnoremap ds" vi"oh<Esc>msvi"l<Esc>x`sx
-nnoremap ds' vi'oh<Esc>msvi'l<Esc>x`sx
+" nnoremap ds( vi(oh<Esc>msvi(l<Esc>x`sx
+" nnoremap ds[ vi[oh<Esc>msvi[l<Esc>x`sx
+" nnoremap ds{ vi{oh<Esc>msvi{l<Esc>x`sx
+" nnoremap ds< vi<oh<Esc>msvi<l<Esc>x`sx
+" nnoremap ds" vi"oh<Esc>msvi"l<Esc>x`sx
+" nnoremap ds' vi'oh<Esc>msvi'l<Esc>x`sx
 
-nnoremap cs"' vi"oh<Esc>msvi"l<Esc>cl'<Esc>`scl'<Esc>
-nnoremap cs'" vi'oh<Esc>msvi'l<Esc>cl"<Esc>`scl"<Esc>
+" nnoremap cs"' vi"oh<Esc>msvi"l<Esc>cl'<Esc>`scl'<Esc>
+" nnoremap cs'" vi'oh<Esc>msvi'l<Esc>cl"<Esc>`scl"<Esc>
