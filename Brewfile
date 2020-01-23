@@ -45,7 +45,6 @@ cask 'qlmarkdown'
 cask 'qlstephen'
 cask 'quicklookapk'
 cask 'quicklook-json'
-cask 'provisioning'
 
 # Install Mac App Store apps
 mas 'Battery Health', id: 490192174
