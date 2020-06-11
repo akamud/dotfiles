@@ -1,0 +1,16 @@
+source ~/.vimrc
+
+" IdeaVim plugins
+set surround
+set commentary
+" Proper paste without losing the text in the register
+set ReplaceWithRegister
+" Relative Line Numbers
+set rnu
+" Absolute Line Number on selected line
+set nu
+
+" paste maps
+nmap <Leader>p gr
+nmap <Leader>pp grr
+xmap <Leader>p gr

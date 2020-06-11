@@ -3,7 +3,7 @@
 - link:
     ~/.gitconfig: gitconfig
     ~/.vimrc: vimrc
-    ~/.ideavimrc: vimrc
+    ~/.ideavimrc: ideavimrc
     ~/.zshrc: 
         force: true
         path: 'zshrc'
