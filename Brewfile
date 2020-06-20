@@ -8,6 +8,9 @@ brew 'zsh-syntax-highlighting'
 # Install Binaries
 brew 'mas'
 brew 'node'
+brew 'bat'
+brew 'coreutils'
+brew 'grep'
 
 # Development
 cask 'dotnet-sdk'
