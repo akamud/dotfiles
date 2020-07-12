@@ -8,11 +8,16 @@ brew 'zsh-syntax-highlighting'
 # Install Binaries
 brew 'mas'
 brew 'node'
+
+# Utilies
 brew 'bat'
 brew 'coreutils'
 brew 'grep'
+brew 'jq'
+brew 'exa'
 
 # Development
+brew 'kubectl'
 cask 'dotnet-sdk'
 cask 'imageoptim'
 cask 'sourcetree'
