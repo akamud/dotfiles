@@ -68,3 +68,11 @@ for app in "cfprefsd" \
 	killall "${app}" &> /dev/null
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
+
+###############################################################################
+# Rectangle                                                                   #
+###############################################################################
+
+# Set "almost maximize" size
+defaults write com.knollsoft.Rectangleb almostMaximizeWidth -float 0.93
+defaults write com.knollsoft.Rectangleb almostMaximizeHeight -float 0.93
