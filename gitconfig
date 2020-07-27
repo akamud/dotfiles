@@ -1,11 +1,11 @@
 [core]
 	excludesfile = /Users/Mahmoud/.gitignore_global
 	editor = code --wait
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	cmd = /Applications/p4merge.app/Contents/MacOS/p4merge \"$LOCAL\" \"$REMOTE\"
 	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+[mergetool]
+	cmd = /Applications/p4merge.app/Contents/MacOS/p4merge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
 	trustExitCode = true
 [user]
 	name = Mahmoud Ali
@@ -28,10 +28,11 @@
     un = !GIT_CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD) && git log origin/$GIT_CURRENT_BRANCH..
     pend = !GIT_CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD) && git log ..origin/$GIT_CURRENT_BRANCH
     save = !git add -A && git commit -m 'SAVEPOINT'
-    wip = !git add -u && git commit -m "WIP"
+    wip = !git add -A && git commit -m "WIP"
     undo = reset --soft HEAD~1
     wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
     bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
+    we = "for branch in $(git branch --list | grep ma/); do git branch -d $branch; done;"
     amend = commit -a --amend
     bl = show-branch --list
     fap = fetch --all --prune
@@ -52,3 +53,13 @@
     abbrevCommit = true
 [format]
     pretty=format:%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset
+[commit]
+	template = /Users/mahmoud/.stCommitMsg
+[difftool "sourcetree"]
+	cmd = /Applications/p4merge.app/Contents/MacOS/p4merge \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/p4merge.app/Contents/MacOS/p4merge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+	trustExitCode = true
+[init]
+	defaultBranch = main
