@@ -91,4 +91,9 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # export PATH=/Users/Mahmoud/.node/bin:/Users/Mahmoud/.dnx/runtimes/dnx-coreclr-darwin-x64.1.0.0-rc1-final/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet/
 
+# Kubectl completions
+source <(kubectl completion zsh)
+complete -F __start_kubectl k
+
 SPACESHIP_GIT_STATUS_STASHED=
+alias k=kubectl

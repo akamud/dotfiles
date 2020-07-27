@@ -12,8 +12,6 @@
 	<integer>1</integer>
 	<key>AppleWindowTabbingMode</key>
 	<string>manual</string>
-	<key>CGFontRenderingFontSmoothingDisabled</key>
-	<false/>
 	<key>Custom Color Presets</key>
 	<dict>
 		<key>Argonaut</key>
@@ -2090,16 +2088,14 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
-	<key>NSWindow Frame NSFontPanel</key>
-	<string>785 305 744 359 0 0 1680 1027 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>530 476 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>863 168 697 456 0 0 1680 1027 </string>
+	<string>817 431 599 521 0 0 1680 1027 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>406 1647 928 394 -116 1050 1920 1057 </string>
+	<string>177 1106 796 486 -112 1050 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>315 218 1050 590 0 0 1680 1027 </string>
+	<string>467 235 746 556 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -3108,37 +3104,34 @@
 	<key>NoSyncAllAppVersions</key>
 	<array>
 		<string>3.3.6</string>
-		<string>3.3.8</string>
-		<string>3.3.11</string>
 		<string>3.3.12</string>
-		<string>3.3.3</string>
+		<string>3.3.2</string>
+		<string>3.2.9</string>
 		<string>3.3.7</string>
 		<string>3.3.9</string>
 		<string>3.2.9</string>
-		<string>3.3.2</string>
 		<string>3.3.0</string>
+		<string>3.3.4</string>
 	</array>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{430, 797}</string>
+		<string>{539, 999}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
-	<true/>
-	<key>NoSyncHaveUsedCopyMode</key>
 	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>17297800-0E8B-4AB0-B3A8-EB62447BD8A2</string>
+	<string>E3A62BF3-C921-4BA2-BA15-C422B3193D78</string>
 	<key>NoSyncLastTipTime</key>
-	<real>589301385.15299106</real>
+	<real>607093802.21261406</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>214</integer>
+	<integer>121</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
-	<real>586546443.21305501</real>
+	<real>586531999.407354</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
 	<true/>
 	<key>NoSyncPermissionToShowTip</key>
@@ -3493,7 +3486,7 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
-				<string>currentTab.currentSession.terminalIconName</string>
+				<string>currentTab.currentSession.terminalWindowName</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -3501,7 +3494,7 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
-				<string>currentTab.currentSession.terminalWindowName</string>
+				<string>currentTab.currentSession.terminalIconName</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -3792,7 +3785,7 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
-				<string>currentSession.terminalWindowName</string>
+				<string>currentSession.pid</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -3800,7 +3793,7 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
-				<string>currentSession.pid</string>
+				<string>currentSession.terminalWindowName</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -3858,88 +3851,87 @@
 		</array>
 	</dict>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>573056028.70841396</real>
+	<real>574614631.38743603</real>
 	<key>NoSyncTipsToNotShow</key>
 	<array>
-		<string>000</string>
-		<string>0000</string>
-		<string>0001</string>
-		<string>0002</string>
-		<string>0003</string>
-		<string>0004</string>
-		<string>0005</string>
-		<string>0006</string>
-		<string>0007</string>
-		<string>0008</string>
-		<string>0009</string>
-		<string>0010</string>
-		<string>0011</string>
-		<string>0012</string>
-		<string>0013</string>
-		<string>0014</string>
-		<string>0015</string>
-		<string>0016</string>
-		<string>0017</string>
-		<string>0018</string>
-		<string>0019</string>
-		<string>0020</string>
-		<string>0021</string>
-		<string>0022</string>
-		<string>0023</string>
-		<string>0024</string>
-		<string>0025</string>
-		<string>0026</string>
-		<string>0027</string>
-		<string>0028</string>
-		<string>0029</string>
 		<string>0030</string>
-		<string>0031</string>
-		<string>0032</string>
-		<string>0033</string>
-		<string>0034</string>
-		<string>0035</string>
-		<string>0036</string>
-		<string>0037</string>
-		<string>0038</string>
-		<string>0039</string>
-		<string>0040</string>
-		<string>0041</string>
-		<string>0042</string>
-		<string>0043</string>
-		<string>0044</string>
-		<string>0045</string>
-		<string>0046</string>
-		<string>0047</string>
-		<string>0048</string>
-		<string>0049</string>
-		<string>0050</string>
-		<string>0051</string>
-		<string>0052</string>
-		<string>0053</string>
-		<string>0054</string>
-		<string>0055</string>
-		<string>0056</string>
-		<string>0057</string>
-		<string>0058</string>
+		<string>0023</string>
+		<string>0016</string>
+		<string>0009</string>
 		<string>0059</string>
-		<string>0060</string>
-		<string>0061</string>
-		<string>0062</string>
-		<string>0063</string>
-		<string>0064</string>
-		<string>0065</string>
 		<string>0066</string>
-		<string>0067</string>
-		<string>0068</string>
-		<string>0069</string>
-		<string>0070</string>
-		<string>0071</string>
-		<string>0072</string>
 		<string>0073</string>
+		<string>0002</string>
+		<string>0045</string>
+		<string>0038</string>
+		<string>0052</string>
+		<string>0017</string>
+		<string>0031</string>
+		<string>0024</string>
+		<string>0067</string>
 		<string>0074</string>
-		<string>0075</string>
+		<string>0010</string>
+		<string>0046</string>
+		<string>0003</string>
+		<string>0039</string>
+		<string>0053</string>
+		<string>0060</string>
+		<string>0025</string>
+		<string>0018</string>
+		<string>0032</string>
+		<string>0068</string>
+		<string>0011</string>
+		<string>0047</string>
+		<string>0004</string>
+		<string>0054</string>
+		<string>0061</string>
+		<string>0033</string>
+		<string>0026</string>
+		<string>0019</string>
+		<string>0040</string>
+		<string>0069</string>
 		<string>0076</string>
+		<string>0012</string>
+		<string>0048</string>
+		<string>0005</string>
+		<string>0055</string>
+		<string>0062</string>
+		<string>0041</string>
+		<string>0034</string>
+		<string>0027</string>
 		<string>0077</string>
+		<string>0013</string>
+		<string>0049</string>
+		<string>0006</string>
+		<string>0020</string>
+		<string>0056</string>
+		<string>0063</string>
+		<string>0070</string>
+		<string>0042</string>
+		<string>0035</string>
+		<string>0028</string>
+		<string>0021</string>
+		<string>0014</string>
+		<string>0007</string>
+		<string>0057</string>
+		<string>0064</string>
+		<string>0071</string>
+		<string>0000</string>
+		<string>0029</string>
+		<string>0050</string>
+		<string>0043</string>
+		<string>0036</string>
+		<string>0022</string>
+		<string>0015</string>
+		<string>0008</string>
+		<string>0058</string>
+		<string>0065</string>
+		<string>0072</string>
+		<string>0001</string>
+		<string>0037</string>
+		<string>000</string>
+		<string>0044</string>
+		<string>0051</string>
 		<string>0078</string>
 	</array>
 	<key>OpenArrangementAtStartup</key>
@@ -3990,15 +3982,15 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final_new.xml?shard=70</string>
+	<string>https://iterm2.com/appcasts/final_new.xml?shard=52</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-07-10T13:43:10Z</date>
+	<date>2020-07-12T14:57:14Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
-	<integer>1011556855</integer>
+	<integer>1934584450</integer>
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>SmartPlacement</key>

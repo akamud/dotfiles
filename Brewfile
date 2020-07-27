@@ -18,6 +18,7 @@ brew 'exa'
 
 # Development
 brew 'kubectl'
+brew 'kind'
 cask 'dotnet-sdk'
 cask 'imageoptim'
 cask 'sourcetree'
