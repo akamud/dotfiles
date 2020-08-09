@@ -38,6 +38,8 @@ xnoremap s "_s
 nnoremap S "_S
 xnoremap S "_S
 
+nnoremap <Leader>dd ""p
+
 " surround maps
 " nnoremap ys( ciw(<C-r>")<Esc>
 " nnoremap ys[ ciw[<C-r>"]<Esc>
