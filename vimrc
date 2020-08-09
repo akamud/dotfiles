@@ -13,6 +13,31 @@ nnoremap <C-CR> O<ESC>
 vnoremap <Leader>c "hy:%s/<C-r>h//g<left><left>
 vnoremap <Leader>s "hy:/<C-r>h<CR>
 
+" EasyClip mappings
+nnoremap d "_d
+xnoremap d "_d
+
+nnoremap dd "_dd
+
+nnoremap dD 0"_d$
+
+nnoremap D "_D
+xnoremap D "_D
+
+nnoremap x "_x
+xnoremap x "_x
+
+nnoremap c "_c
+xnoremap c "_c
+
+nnoremap cc "_S
+nnoremap C "_C
+xnoremap C "_C
+nnoremap s "_s
+xnoremap s "_s
+nnoremap S "_S
+xnoremap S "_S
+
 " surround maps
 " nnoremap ys( ciw(<C-r>")<Esc>
 " nnoremap ys[ ciw[<C-r>"]<Esc>
