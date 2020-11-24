@@ -14,3 +14,6 @@ set nu
 nmap <Leader>p gr
 nmap <Leader>pp grr
 xmap <Leader>p gr
+
+" GoTo Impementation
+nmap gD :action GotoImplementation<CR>
