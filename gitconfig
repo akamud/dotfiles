@@ -47,6 +47,7 @@
     lg3-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset) %C(bold cyan)(committed: %cD)%C(reset) %C(auto)%d%C(reset)%n''          %C(white)%s%C(reset)%n''          %C(dim white)- %an <%ae> %C(reset) %C(dim white)(committer: %cn <%ce>)%C(reset)'
     filesIn = diff-tree --no-commit-id --name-only -r 
     breset = "!git checkout master && git branch | grep -v -e master | xargs -n1 git branch -D"
+    backup = "!git branch -M \"$(git rev-parse --abbrev-ref HEAD)\"-backup"
 [push]
     default = simple
 [log]
