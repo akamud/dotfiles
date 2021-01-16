@@ -12,3 +12,6 @@ export PATH="$PATH:$HOME/Library/Developer/flutter/bin"
 
 # Dotnet Tools
 export PATH="$HOME/.dotnet/tools:$PATH"
+
+# Other scripts
+export PATH="$HOME/.dotfiles/bin:$PATH"
