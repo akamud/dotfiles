@@ -68,3 +68,5 @@
 	trustExitCode = true
 [init]
 	defaultBranch = main
+[delta]
+    line-numbers = true
