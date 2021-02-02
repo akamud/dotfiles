@@ -17,6 +17,7 @@ brew 'jq'
 brew 'exa'
 
 # Development
+brew 'git-delta'
 brew 'kubectl'
 brew 'kind'
 cask 'dotnet-sdk'

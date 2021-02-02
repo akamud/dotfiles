@@ -1,6 +1,7 @@
 [core]
 	excludesfile = /Users/Mahmoud/.gitignore_global
 	editor = code --wait
+    pager = delta --color-only
 [difftool]
 	cmd = /Applications/p4merge.app/Contents/MacOS/p4merge \"$LOCAL\" \"$REMOTE\"
 	path = 
