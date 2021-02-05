@@ -1,16 +1,16 @@
 [core]
-	excludesfile = /Users/Mahmoud/.gitignore_global
-	editor = code --wait
+    excludesfile = /Users/Mahmoud/.gitignore_global
+    editor = code --wait
     pager = delta
 [difftool]
-	cmd = /Applications/p4merge.app/Contents/MacOS/p4merge \"$LOCAL\" \"$REMOTE\"
-	path = 
+    cmd = /Applications/p4merge.app/Contents/MacOS/p4merge \"$LOCAL\" \"$REMOTE\"
+    path = 
 [mergetool]
-	cmd = /Applications/p4merge.app/Contents/MacOS/p4merge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
-	trustExitCode = true
+    cmd = /Applications/p4merge.app/Contents/MacOS/p4merge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+    trustExitCode = true
 [user]
-	name = Mahmoud Ali
-	email = muddibr@gmail.com
+    name = Mahmoud Ali
+    email = muddibr@gmail.com
 [color]
     diff = always
     interactive = always
@@ -51,6 +51,8 @@
     backup = "!git branch -M \"$(git rev-parse --abbrev-ref HEAD)\"-backup"
     nw = "!f() { git branch -M \"${1}\" \"${1}\"-backup && git checkout -b \"${1}\" && git cherry-pick $(git merge-base $2 $1-backup)..\"$1\"-backup; }; f"
     debug = !GIT_TRACE=1 git 
+[pull]
+    rebase = false
 [push]
     default = simple
 [log]
@@ -59,14 +61,14 @@
 [format]
     pretty=format:%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset
 [commit]
-	template = /Users/mahmoud/.stCommitMsg
+    template = /Users/mahmoud/.stCommitMsg
 [difftool "sourcetree"]
-	cmd = /Applications/p4merge.app/Contents/MacOS/p4merge \"$LOCAL\" \"$REMOTE\"
-	path = 
+    cmd = /Applications/p4merge.app/Contents/MacOS/p4merge \"$LOCAL\" \"$REMOTE\"
+    path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/p4merge.app/Contents/MacOS/p4merge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
-	trustExitCode = true
+    cmd = /Applications/p4merge.app/Contents/MacOS/p4merge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+    trustExitCode = true
 [init]
-	defaultBranch = main
+    defaultBranch = main
 [delta]
     line-numbers = true
