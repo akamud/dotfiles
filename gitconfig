@@ -55,6 +55,8 @@
     rebase = false
 [push]
     default = simple
+[pull]
+	ff = only
 [log]
     decorate = full
     abbrevCommit = true
