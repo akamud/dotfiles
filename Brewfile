@@ -15,6 +15,7 @@ brew 'coreutils'
 brew 'grep'
 brew 'jq'
 brew 'exa'
+cask 'stats'
 
 # Development
 brew 'git-delta'
