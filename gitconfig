@@ -38,7 +38,7 @@
     bl = show-branch --list
     fap = fetch --all --prune
     bgone = !git branch -vv | grep ': gone]' | awk '{print $1}'
-    delgone = !git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -d
+    delgone = !git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -D
     lg = !"git lg1"
     lg1 = !"git lg1-specific --all"
     lg2 = !"git lg2-specific --all"
