@@ -11,6 +11,7 @@ set rnu
 " Absolute Line Number on selected line
 set nu
 set highlightedyank
+set easymotion
 
 " paste maps
 nmap <Leader>p gr
