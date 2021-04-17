@@ -10,6 +10,7 @@ set ReplaceWithRegister
 set rnu
 " Absolute Line Number on selected line
 set nu
+set highlightedyank
 
 " paste maps
 nmap <Leader>p gr
