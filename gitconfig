@@ -52,6 +52,7 @@
     nw = "!f() { git branch -M \"${1}\" \"${1}\"-backup && git checkout -b \"${1}\" && git cherry-pick $(git merge-base $2 $1-backup)..\"$1\"-backup; }; f"
     debug = !GIT_TRACE=1 git 
     sync = "!git pull upstream \"$(git rev-parse --abbrev-ref HEAD)\""
+    pushor = push -u origin HEAD
 [pull]
     rebase = false
 [push]
