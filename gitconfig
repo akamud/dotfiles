@@ -76,3 +76,5 @@
     defaultBranch = main
 [delta]
     line-numbers = true
+[interactive]
+    diffFilter = delta --color-only
