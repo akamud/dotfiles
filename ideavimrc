@@ -12,6 +12,7 @@ set rnu
 set nu
 set highlightedyank
 set easymotion
+set argtextobj
 
 " paste maps
 nmap <Leader>p gr
