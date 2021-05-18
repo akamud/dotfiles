@@ -69,3 +69,4 @@ mas 'Snap', id: 418073146
 mas 'Skitch', id: 425955336
 mas 'Trello', id: 1278508951
 mas 'TweetDeck', id: 485812721
+mas 'Gifski', id: 1351639930
