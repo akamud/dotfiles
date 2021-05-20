@@ -13,6 +13,7 @@ set nu
 set highlightedyank
 set easymotion
 set argtextobj
+set vim-paragraph-motion
 
 " paste maps
 nmap <Leader>p gr
