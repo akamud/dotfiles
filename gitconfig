@@ -53,6 +53,8 @@
     debug = !GIT_TRACE=1 git 
     sync = "!git pull upstream \"$(git rev-parse --abbrev-ref HEAD)\""
     pushor = push -u origin HEAD
+    re = restore
+    sw = switch
 [pull]
     rebase = false
 [push]
