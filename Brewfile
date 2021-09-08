@@ -1,6 +1,7 @@
 # Taps
 tap 'caskroom/cask'
 tap 'homebrew/bundle'
+tap 'homebrew/cask-fonts'
 
 # Install ZSH
 brew 'zsh-syntax-highlighting'
@@ -23,6 +24,7 @@ brew 'kubectl'
 brew 'kind'
 cask 'dotnet-sdk'
 cask 'imageoptim'
+cask 'font-hack-nerd-font'
 cask 'sourcetree'
 cask 'sublime-text'
 cask 'visual-studio-code'
