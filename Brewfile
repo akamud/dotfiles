@@ -8,7 +8,6 @@ brew 'zsh-syntax-highlighting'
 
 # Install Binaries
 brew 'mas'
-brew 'node'
 
 # Utilies
 brew 'bat'
@@ -73,3 +72,5 @@ mas 'Trello', id: 1278508951
 mas 'TweetDeck', id: 485812721
 mas 'Gifski', id: 1351639930
 mas 'Sim Daltonism', id: 693112260
+mas 'System Color Picker', id: 1545870783
+mas 'Smart Countdown Timer', id: 1410709951

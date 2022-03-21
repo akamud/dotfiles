@@ -3,7 +3,7 @@ source ~/.vimrc
 " IdeaVim plugins
 set surround
 " Vim commentary
-" set commentary
+set commentary
 " Proper paste without losing the text in the register
 set ReplaceWithRegister
 " Relative Line Numbers
@@ -24,5 +24,5 @@ xmap <Leader>p gr
 nmap gD :action GotoImplementation<CR>
 
 " Commentary that actually works on Rider
-nmap gcc :action CommentByLineComment<CR>
-vmap gc :action CommentByBlockComment<CR>
+" nmap gcc :action CommentByLineComment<CR>
+" vmap gc :action CommentByBlockComment<CR>
