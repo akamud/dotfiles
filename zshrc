@@ -1,3 +1,6 @@
+## helper function time zsh startup
+# zmodload zsh/zprof
+
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 
@@ -48,11 +51,29 @@ ZSH_THEME="spaceship"
 # Would you like to use another custom folder than $ZSH/custom?
 ZSH_CUSTOM=$DOTFILES
 
+# Lazy load nvm
+export NVM_LAZY=1
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-prompt z zsh-syntax-highlighting docker docker-compose)
+plugins=(git git-prompt z nvm) #docker docker-compose kubectl)
+# zsh-syntax-highlighting installed view brew
+
+## Helper function to time zsh startup
+# Load all of the plugins that were defined in ~/.zshrc
+# for plugin ($plugins); do
+#   timer=$(($(gdate +%s%N)/1000000))
+#   if [ -f $ZSH_CUSTOM/plugins/$plugin/$plugin.plugin.zsh ]; then
+#     source $ZSH_CUSTOM/plugins/$plugin/$plugin.plugin.zsh
+#   elif [ -f $ZSH/plugins/$plugin/$plugin.plugin.zsh ]; then
+#     source $ZSH/plugins/$plugin/$plugin.plugin.zsh
+#   fi
+#   now=$(($(gdate +%s%N)/1000000))
+#   elapsed=$(($now-$timer))
+#   echo $elapsed":" $plugin
+# done
 
 # User configuration
 
@@ -91,13 +112,15 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # export PATH=/Users/Mahmoud/.node/bin:/Users/Mahmoud/.dnx/runtimes/dnx-coreclr-darwin-x64.1.0.0-rc1-final/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet/
 
-# Kubectl completions
-source <(kubectl completion zsh)
-complete -F __start_kubectl k
-
 SPACESHIP_GIT_STATUS_STASHED=
-alias k=kubectl
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# Helper function to time zsh startup
+# timezsh() {
+#   shell=${1-$SHELL}
+#   for i in $(seq 1 10); do /usr/bin/time $shell -i -c exit; done
+# }
+
+# NVM is now sourced via plugin
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
