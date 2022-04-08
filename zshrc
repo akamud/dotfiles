@@ -58,11 +58,11 @@ export NVM_LAZY=1
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-prompt z nvm) #docker docker-compose kubectl)
+plugins=(git git-prompt z autojump nvm) #docker docker-compose kubectl)
 # zsh-syntax-highlighting installed view brew
 
 ## Helper function to time zsh startup
-# Load all of the plugins that were defined in ~/.zshrc
+## Load all of the plugins that were defined in ~/.zshrc
 # for plugin ($plugins); do
 #   timer=$(($(gdate +%s%N)/1000000))
 #   if [ -f $ZSH_CUSTOM/plugins/$plugin/$plugin.plugin.zsh ]; then

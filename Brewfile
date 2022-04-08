@@ -18,6 +18,7 @@ brew 'exa'
 cask 'stats'
 
 # Development
+brew 'autojump'
 brew 'git-delta'
 brew 'kubectl'
 brew 'kind'
