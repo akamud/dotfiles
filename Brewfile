@@ -15,6 +15,7 @@ brew 'coreutils'
 brew 'grep'
 brew 'jq'
 brew 'exa'
+brew 'glow'
 cask 'stats'
 
 # Development

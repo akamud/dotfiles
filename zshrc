@@ -52,13 +52,13 @@ ZSH_THEME="spaceship"
 ZSH_CUSTOM=$DOTFILES
 
 # Lazy load nvm
-export NVM_LAZY=1
+# export NVM_LAZY=1
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-prompt z autojump nvm) #docker docker-compose kubectl)
+plugins=(git git-prompt autojump nvm) #docker docker-compose kubectl)
 # zsh-syntax-highlighting installed view brew
 
 ## Helper function to time zsh startup
