@@ -31,7 +31,6 @@ cask 'sublime-text'
 cask 'visual-studio-code'
 
 # Apps
-cask 'around'
 cask 'alfred'
 cask 'caffeine'
 cask 'dropbox'
