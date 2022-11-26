@@ -29,6 +29,7 @@ cask 'font-fira-code'
 cask 'sourcetree'
 cask 'sublime-text'
 cask 'visual-studio-code'
+cask 'he3-app/he3/he3' # he3.app dev toolbox
 
 # Apps
 cask 'alfred'
