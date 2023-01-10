@@ -23,6 +23,5 @@ xmap <Leader>p gr
 " GoTo Impementation
 nmap gD :action GotoImplementation<CR>
 
-" Commentary that actually works on Rider
-" nmap gcc :action CommentByLineComment<CR>
-" vmap gc :action CommentByBlockComment<CR>
+" Smart join for IdeaVim
+set ideajoin

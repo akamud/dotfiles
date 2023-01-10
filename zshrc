@@ -124,3 +124,15 @@ SPACESHIP_GIT_STATUS_STASHED=
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
+
+# Load Nuke Autocompletion
+_nuke_zsh_complete()
+{
+    local completions=("$(nuke :complete "$words")")
+    reply=( "${(ps:\n:)completions}" )
+}
+compctl -K _nuke_zsh_complete nuke
