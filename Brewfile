@@ -26,13 +26,15 @@ brew 'kind'
 cask 'dotnet-sdk'
 cask 'imageoptim'
 cask 'font-fira-code'
+cask 'font-fira-code-nerd-font'
 cask 'sourcetree'
 cask 'sublime-text'
 cask 'visual-studio-code'
 cask 'he3-app/he3/he3' # he3.app dev toolbox
 
 # Apps
-cask 'alfred'
+# cask 'alfred'
+cask 'raycast'
 cask 'caffeine'
 cask 'dropbox'
 cask 'google-chrome'
